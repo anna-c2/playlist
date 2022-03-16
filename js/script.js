@@ -39,8 +39,10 @@ let song4 = {
 
 let playlist = [song1, song2, song3, song4]
 
+var numOfSongs;
+
 function numSongs(){
-  let numOfSongs = playlist.length;
+  numOfSongs = playlist.length;
   $(".numOfSongs").text(`Number of Songs: ${numOfSongs}`);
 }
 numSongs();
@@ -89,6 +91,20 @@ $(".add").click(function () {
   addSongInfo();
   displaySongInfo();
   numSongs();
+  $(".displayMsg").text("");
+});
+
+$(".delete").click(function () {
+let x = playlist.pop();
+emptySongInfo();
+displaySongInfo();
+numOfSongs = numOfSongs - 1;
+  if (numOfSongs == 0){
+    $(".displayMsg").text("Start Adding Songs To Your Playlist!");
+  } else{
+    $(".displayMsg").text("");
+  }
+numSongs();
 });
 
 displaySongInfo();

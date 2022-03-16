@@ -8,30 +8,45 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
+
     <!-- Your CSS -->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <h1>My Playlist</h1>
-    <div class="form">
-      <p>Add a new song:</p>
-      <input placeholder="Song Title" class="title" />
-      <input placeholder="Artist Name" class="artist" />
-      <input placeholder="Image URL" class="image" />
-      <input placeholder="Song Link Address" class="link" />
-      <button class="add">Add</button>
+    <div class="top">
+      <h1>My Playlist</h1>
+      <div class="form">
+        <p>Add a new song:</p>
+        <input placeholder="Song Title" class="title" />
+        <input placeholder="Artist Name" class="artist" />
+        <input placeholder="Image URL" class="image" />
+        <input placeholder="Song Link Address" class="link" />
+        <button class="add">Add</button>
+      </div>
+
+      <p class="numOfSongs">hjkj</p>
     </div>
-    <p style="font-size: 18px; margin-left:10em;" class="numOfSongs">
-      hjkj
-    </p>
     <div class="display">
-      
+      <p class="displayMsg">
+      </p>
       <div class="column images"></div>
       <div class="column songs"></div>
       <div class="column artists"></div>
       <div class="column lengths"></div>
       <div class="column links"></div>
+    </div>
+    
+    <div style="background-color:#edbbcc;padding:25px;">
+      <button class="delete">
+      Delete Most Recent
+    </button>
     </div>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

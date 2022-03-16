@@ -1,5 +1,8 @@
 h1 {
   text-align: center;
+  font-family: 'Alfa Slab One', cursive;
+  margin:0px;
+  padding-top: 20px;
 }
 
 .display {
@@ -61,6 +64,32 @@ input {
 }
 
 button {
-  font-size: 14px;
+  font-size: 18px;
   padding: 5px 10px;
+  background: #ffcd8f;
+  border:1px solid black;
+}
+
+body{
+  background: #fff2d6;
+}
+.top{
+  background-color:#edbbcc;
+}
+.numOfSongs{
+  font-size: 18px; 
+  margin-left: 10em; 
+  margin-bottom:0px; 
+  padding-bottom:20px
+}
+.delete{
+  background-color:#a65883;
+  color:white;
+  margin-left:70px;
+}
+.displayMsg{
+  font-size:50px;
+  display: flex;
+  justify-content: center;
+  opacity: 0.5;
 }
